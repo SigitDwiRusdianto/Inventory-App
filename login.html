@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBOB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="image/1-removebg-preview.png">
+    <style>
+        body {
+            background-color: #FAEED1;
+            overflow: hidden;
+        }
+        .content-container {
+            display: flex;
+            justify-content: left;
+            align-items: center; 
+            gap: 20px;
+            height: calc(100vh - 80px); 
+        }
+
+        .text-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .navbar {
+            background-color: #B99470;
+            font-size: large;
+            font-weight: 400;
+            padding: 0.05rem 0.2rem; /* Adjust padding to reduce height */
+        }
+        .navbar .nav-item {
+            padding-left: 1rem;
+        }
+        .navbar .nav-item a {
+            height: auto;
+            color: black; /* Change text color to black */
+            text-decoration: none; /* Remove underline */
+        }
+        .navbar .nav-item a:hover {
+            color: black; /* Ensure text color remains black on hover */
+        }
+        .nav-item .active {
+            font-weight: 500;
+        }
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                width: 100%;
+                transition-timing-function: ease-out;
+            }
+            .nav-item .btn {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            #input-search {
+                width: 12em;
+            }
+            #banner img {
+                height: 200px;
+                width: min-content;
+            }
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand h2 {
+            color: black;
+            font-size: 1.5rem; 
+        }
+        .navbar-brand img {
+            height: 70px; 
+            margin-right: 5px; /* Reduce the space between the logo and the text */
+        }
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-right: 100px;
+        }
+
+        .bottom-section-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: calc(100vh - 60px); /* Adjust for header height */
+            padding: 20px;
+        }
+        .illustration img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 100px;
+        }
+        .form-container {
+            background-color: #B99470;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: black;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-container .btn-primary {
+            width: 100%;
+            padding: 10px;
+            background-color: #B99470;
+            border: 2px solid #171818; /* Added border */
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+        }
+        .form-container .btn-primary:hover {
+            background-color: #DED0B6;
+            border-color: #000000; /* Darker border on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark shadow">
+            <div class="container">
+                <a class="navbar-brand col-ms-3" href="./user/userpage.html">
+                    <img src="image/1-removebg-preview.png" alt="IBOB Logo">
+                    <h2>IBOB</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" type="button">Butuh bantuan?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bottom-section">
+        <div class="illustration">
+            <img src="image/2.png" alt="Illustration">
+        </div>
+        <div class="form-container">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Katasandi">
+            <a href="./user/userpage.html" class="btn btn-primary">Login</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
